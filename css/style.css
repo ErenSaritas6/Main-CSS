@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap');
+
+:root {
+    --dark-bg: #1F2937;
+    --main-text-white: #F9FAF8;
+    --secondary-text-white: #E5E7EB;
+    --button-blue: #3882F6;
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ----------- nav bar -------- */
+
+header {
+    background-color: var(--dark-bg);
+    padding: 0 15rem;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+#logo a {
+    font-size: 24px;
+    color: var(--main-text-white);
+}
+
+.nav-item a {
+    color: var(--secondary-text-white);
+    font-size: 18px;
+    transition: all 150ms ease-in;
+}
+
+.nav-item a:hover {
+    color: var(--button-blue);
+}
+
+.nav-item:first-child {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.nav-item {
+    margin: 1rem 2rem;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+/* ----------- dark section -------- */
+
+.section-dark {
+    background-color: var(--dark-bg);
+    padding: 0 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-dark-container {
+    width: 28rem;
+}
+
+.main-text {
+    font-weight: 900;
+    font-size: 48px;
+    color: var(--main-text-white);
+}
+
+.secondary-text {
+    font-size: 18px;
+    color: var(--secondary-text-white);
+}
+
+.btn-primary {
+    background-color: var(--button-blue);
+    color: white;
+    padding: 0.3rem 1.5rem;
+    border-radius: 0.4rem;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 150ms ease-in;
+}
+
+.btn-primary:hover {
+    opacity: 0.3;
+}
+
+.placeholder-img {
+    margin: 7rem 0;
+    height: 16rem;
+    width: 32rem;
+}
+
+/* ----------- information section -------- */
+
+.information-section {
+    background-color: #ffffff;
+    padding: 0 15rem;
+}
+
+.information-title {
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--dark-bg);
+    text-align: center;
+    margin: 3rem auto;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.card {
+    margin: auto 3rem;
+}
+
+.white-img {
+    border: 0.2rem solid var(--button-blue);
+    border-radius: 0.8rem;
+    height: 10rem;
+    width: 10rem;
+}
+
+.card p {
+    text-align: center;
+    color: rgb(114, 114, 114);
+    font-size: 18px;
+}
+
+/* ----------- quote section -------- */
+
+.section-quote {
+    padding: 4rem 15rem;
+    background-color: var(--secondary-text-white);
+}
+
+.quote-container {
+    margin: 3rem auto;
+    width: 49rem;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: left;
+    color: var(--dark-bg);
+}
+
+.author {
+    color: var(--dark-bg);
+    font-weight: 900;
+    font-size: 22px;
+    text-align: right;
+}
+
+/* ----------- call to action section -------- */
+
+.section-action {
+    background-color: #ffffff;
+    padding: 0 15rem;
+    margin: 5rem;
+}
+
+.action-container {
+    background-color: var(--button-blue);
+    padding: 3rem 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.4rem;
+}
+
+.action-primary-text {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.action-secondary-text {
+    font-size: 16px;
+    color: var(--secondary-text-white);
+}
+
+.btn-secondary {
+    background-color: var(--button-blue);
+    color: #ffffff;
+    padding: 0.3rem 1.5rem;
+    border-radius: 0.4rem;
+    border: solid 0.1rem #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 150ms ease-in;
+}
+
+.btn-secondary:hover {
+    opacity: 0.3;
+}
+
+/* ----------- footer -------- */
+
+footer {
+    background-color: var(--dark-bg);
+    padding: 2rem 15rem;  
+}
+
+.footer-text {
+    color: var(--secondary-text-white);
+    text-align: center;
+}
